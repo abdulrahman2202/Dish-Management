@@ -19,6 +19,8 @@ export const DishCard: React.FC<DishCardProps> = ({ dish, onToggle }) => {
                         alt={dish.dishName}
                         fill
                         unoptimized
+                        priority
+                        loading="eager"
                         className="object-cover transition-transform duration-500 hover:scale-105"
                     />
                 ) : (
