@@ -18,6 +18,7 @@ export const DishCard: React.FC<DishCardProps> = ({ dish, onToggle }) => {
                         src={dish.imageUrl}
                         alt={dish.dishName}
                         fill
+                        unoptimized
                         className="object-cover transition-transform duration-500 hover:scale-105"
                     />
                 ) : (
@@ -43,8 +44,8 @@ export const DishCard: React.FC<DishCardProps> = ({ dish, onToggle }) => {
                 <button
                     onClick={() => onToggle(dish.dishId)}
                     className={`w-full py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 transform active:scale-95 ${dish.isPublished
-                            ? 'bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200'
-                            : 'border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white dark:border-zinc-50 dark:text-zinc-50 dark:hover:bg-zinc-50 dark:hover:text-zinc-900'
+                        ? 'bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                        : 'border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white dark:border-zinc-50 dark:text-zinc-50 dark:hover:bg-zinc-50 dark:hover:text-zinc-900'
                         }`}
                 >
                     {dish.isPublished ? 'Unpublish Dish' : 'Publish Dish'}
