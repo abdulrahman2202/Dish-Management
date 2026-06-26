@@ -125,7 +125,7 @@ export default function Home() {
       <footer className="mt-20 border-t border-zinc-200 dark:border-zinc-800 py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-zinc-400 dark:text-zinc-600 text-sm">
-            &copy; 2026 Dish Management Assignment. Powered by Real-time Sync.
+            &copy; 2026 Dish Management Assignment. Powered by Real-time Sync. Develop By Abdul Rahman
           </p>
         </div>
       </footer>
